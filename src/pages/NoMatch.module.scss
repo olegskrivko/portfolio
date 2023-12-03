@@ -1,0 +1,69 @@
+.lighthouse {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.triangle {
+  width: 0;
+  height: 70px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 70px solid rgb(83, 43, 43);
+}
+.rectangle {
+  width: 80px;
+  height: 60px;
+  background-color: lightskyblue;
+  opacity: 0.2;
+}
+.trapezoid {
+  width: 180px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 300px solid rgb(248, 246, 246);
+}
+.door {
+  width: 50px;
+  height: 80px;
+  border-radius: 51% 49% 51% 49% / 100% 100% 0% 0%;
+  background-color: black;
+  margin-top: -80px;
+}
+.light {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: absolute;
+  margin-top: -210px;
+  opacity: 0.8;
+  animation: light 6s infinite linear;
+}
+@keyframes light {
+  0%,
+  100% {
+    box-shadow: 0 0 100px 100px lightyellow, 0 0 200px 100px lightyellow,
+      0 0 300px lightyellow, 0 0 500px lightyellow, 0 0 800px white;
+  }
+  25% {
+    width: 5px;
+    box-shadow: -50px 0 100px 100px lightyellow, -150px 0 200px 80px lightyellow,
+      -250px 0 300px 60px lightyellow, -500px 0 500px 40px lightyellow,
+      -800px 0 800px 20px white;
+  }
+  50% {
+    width: 50px;
+    box-shadow: 0 0 50px lightyellow, 0 0 100px lightyellow,
+      0 0 150px lightyellow, 0 0 200px white;
+  }
+  75% {
+    width: 5px;
+    box-shadow: 50px 0 100px 100px lightyellow, 150px 0 200px 80px lightyellow,
+      250px 0 300px 60px lightyellow, 500px 0 500px 40px lightyellow,
+      800px 0 800px 20px white;
+  }
+}

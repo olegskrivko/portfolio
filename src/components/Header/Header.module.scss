@@ -1,0 +1,62 @@
+/* Header.module.scss */
+@import "../../styles/sass/variables";
+
+header {
+  //   position: fixed; /* Set position to fixed */
+  //   top: 0; /* Stick to the top */
+  //   z-index: 1000; /* Set a high z-index to ensure it stays above other elements */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* Position type */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Set a high z-index to ensure it stays above other elements */
+  border-bottom: 2px solid $primary-color; /* Use solid border style */
+  width: 100%;
+  padding: 16px 0;
+  background-color: #272829;
+}
+
+.list {
+  list-style: none; /* Remove bullet points for list items */
+  padding: 0; /* Remove default padding */
+}
+
+.list li {
+  display: inline-block; /* Display list items in a line */
+  margin-right: 10px; /* Add some space between list items */
+}
+
+.list li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.list li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: $primary-color;
+  font-weight: 300;
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  position: relative; /* Set position to relative to position the pipe */
+  padding: 5px;
+}
+
+// .list li a::after {
+//   content: "|"; /* Content of the pseudo-element */
+//   position: absolute;
+//   top: 5px;
+//   right: -8px; /* Adjust the positioning of the pipe */
+//   color: $primary-color; /* Color of the pipe */
+// }
+
+// .list li:last-child a::after {
+//   display: none; /* Hide pipe for the last link */
+// }
+
+.list li a:hover {
+  color: #dadada; /* Change link color on hover */
+}
+
+.list li a.active {
+  color: #fff; /* Change link color for active state */
+  /*font-weight: bold;  For emphasis, change font weight */
+}

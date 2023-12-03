@@ -1,0 +1,151 @@
+/* Import variables and mixins */
+/* Import component styles */
+/* Header.module.scss */
+header { /* For Safari */
+  position: sticky; /* Position type */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Set a high z-index to ensure it stays above other elements */
+  border-bottom: 2px solid #f7c269; /* Use solid border style */
+  width: 100%;
+  padding: 16px 0;
+  background-color: #272829;
+}
+
+.list {
+  list-style: none; /* Remove bullet points for list items */
+  padding: 0; /* Remove default padding */
+}
+
+.list li {
+  display: inline-block; /* Display list items in a line */
+  margin-right: 10px; /* Add some space between list items */
+}
+
+.list li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.list li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #f7c269;
+  font-weight: 300;
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+  position: relative; /* Set position to relative to position the pipe */
+  padding: 5px;
+}
+
+.list li a:hover {
+  color: #dadada; /* Change link color on hover */
+}
+
+.list li a.active {
+  color: #fff; /* Change link color for active state */
+  /*font-weight: bold;  For emphasis, change font weight */
+}
+
+.vertical-timeline {
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+.timeline-date {
+  color: #8c8c8c;
+}
+
+/* ...other component styles */
+/* Import page-specific styles */
+.lighthouse {
+  width: 500px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  width: 0;
+  height: 70px;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 70px solid red;
+}
+
+.rectangle {
+  width: 80px;
+  height: 60px;
+  background-color: lightskyblue;
+  opacity: 0.2;
+}
+
+.trapezoid {
+  width: 90px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 300px solid white;
+}
+
+.door {
+  width: 50px;
+  height: 80px;
+  border-radius: 51% 49% 51% 49%/100% 100% 0% 0%;
+  background-color: black;
+  margin-top: -80px;
+}
+
+.light {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: absolute;
+  margin-top: -150px;
+  opacity: 0.8;
+  animation: light 6s infinite linear;
+}
+
+@keyframes light {
+  0%, 100% {
+    box-shadow: 0 0 100px 100px lightyellow, 0 0 200px 100px lightyellow, 0 0 300px lightyellow, 0 0 500px lightyellow, 0 0 800px white;
+  }
+  25% {
+    width: 5px;
+    box-shadow: -50px 0 100px 100px lightyellow, -150px 0 200px 80px lightyellow, -250px 0 300px 60px lightyellow, -500px 0 500px 40px lightyellow, -800px 0 800px 20px white;
+  }
+  50% {
+    width: 50px;
+    box-shadow: 0 0 50px lightyellow, 0 0 100px lightyellow, 0 0 150px lightyellow, 0 0 200px white;
+  }
+  75% {
+    width: 5px;
+    box-shadow: 50px 0 100px 100px lightyellow, 150px 0 200px 80px lightyellow, 250px 0 300px 60px lightyellow, 500px 0 500px 40px lightyellow, 800px 0 800px 20px white;
+  }
+}
+/* GLOBAL styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-title {
+  text-align: center;
+  color: #f7c269;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #272829 !important;
+}
+
+/* Other global styles or utility classes */
+/* ... *//*# sourceMappingURL=main.css.map */

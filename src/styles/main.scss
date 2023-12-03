@@ -1,0 +1,88 @@
+/* Import variables and mixins */
+@import "sass/variables";
+@import "sass/mixins";
+
+/* Import component styles */
+@import "../components/Header/Header.module.scss";
+@import "../components/Footer/Footer.module.scss";
+@import "../components/Card/Card.module.scss";
+@import "../components/Footer/Footer.module.scss";
+@import "../components/ScrollToButton/ScrollToButton.module.scss";
+@import "../components/PortfolioCategory/PortfolioCategory.module.scss";
+
+@import "../components/Intro/Intro.module.scss";
+@import "../components/Section/Section.module.scss";
+@import "../components/Contact/Contact.module.scss";
+@import "../components/VerticalTimelineComponent/VerticalTimelineComponent.module.scss";
+
+/* ...other component styles */
+
+/* Import page-specific styles */
+@import "../pages/Home.module.scss";
+@import "../pages/Portfolio.module.scss";
+@import "../pages/NoMatch.module.scss";
+@import "../pages/PortfolioDetails.module.scss";
+
+/* GLOBAL styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  // background-color: #06141b;
+  // background-color: #11212d;
+  // background-color: #253745;
+  // background-color: #4a5c6a;
+  // background-color: #9ba8ab;
+  // background-color: #ccd0cf;
+  // background-color: #06141b;
+
+  //background-color: #c1e8ff;
+  //background-color: #7da0ca;
+  //background-color: #5483b3;
+  //background-color: #052659;
+  //background-color: #021024;
+}
+
+.section-title {
+  text-align: center;
+  color: #f7c269;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #272829 !important;
+}
+
+// .container {
+//   width: 100%; /* Full width */
+//   max-width: 1200px; /* Set a maximum width for content */
+//   margin: 0 auto; /* Center the container horizontally */
+//   padding: 0 20px; /* Add padding to the sides */
+// }
+
+/* Other global styles or utility classes */
+/* ... */
+// Example usage of variables and mixins
+// .example-element {
+//   background-color: $primary-color;
+//   padding: $padding-medium;
+
+//   @include respond-to-mobile {
+//     font-size: 14px;
+//   }
+
+//   @include respond-to-tablet {
+//     font-size: 16px;
+//   }
+
+//   @include respond-to-desktop {
+//     font-size: 18px;
+//   }
+// }
