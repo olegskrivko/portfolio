@@ -1,19 +1,33 @@
-import styles from "./NoMatch.module.scss";
 import { Link } from "react-router-dom";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+
 const NoMatch = () => {
   return (
-    <div style={{ color: "#fff", textAlign: "center" }}>
-      <h1>Ooops!! Something went wrong. Go back to Earth</h1>
-      <h1>Page not found</h1>
-      <div className={styles.lighthouse}>
-        <div className={styles.triangle}></div>
-        <div className={styles.rectangle}></div>
-        <div className={styles.trapezoid}></div>
-        <div className={styles.door}></div>
-        <div className={styles.light}></div>
-      </div>
-      <Link to={"/"}>Go Back</Link>
-    </div>
+    <Box
+      sx={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+
+        color: "#fff", // Text color
+      }}
+    >
+      <Typography variant="h4">Oops! Something went wrong!</Typography>
+      <Typography variant="h4">Page not found</Typography>
+      <Button
+        component={Link}
+        to={"/"}
+        variant="contained"
+        style={{ marginTop: "20px", color: "#fff" }}
+      >
+        Go Back
+      </Button>
+    </Box>
   );
 };
 

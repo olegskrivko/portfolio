@@ -20,33 +20,33 @@ import Contact from "../components/Contact/Contact";
 // frontend
 import IconJs from "../images/skills/js.png";
 import IconReact from "../images/skills/react.png";
-import IconVue from "../images/skills/react.png";
+import IconVue from "../images/skills/vue.png";
 // backend
-import IconPython from "../images/skills/python.svg";
-import IconDjango from "../images/skills/python.svg";
-import IconExpress from "../images/skills/python.svg";
-import IconNode from "../images/skills/python.svg";
+import IconPython from "../images/skills/python.png";
+import IconDjango from "../images/skills/django.png";
+import IconExpress from "../images/skills/express.png";
+import IconNode from "../images/skills/node.png";
 // tools & source control
 import IconJira from "../images/skills/jira.png";
 import IconVsc from "../images/skills/vsc.png";
 import IconGit from "../images/skills/git.png";
 // testing
-import IconPostman from "../images/skills/html.png";
+import IconPostman from "../images/skills/postman.png";
 import IconSelenium from "../images/skills/selenium.png";
 // markup & styling
 import IconHtml from "../images/skills/html.png";
 import IconCss from "../images/skills/css.png";
 import IconSass from "../images/skills/sass.png";
 import IconBootstrap from "../images/skills/bootstrap.png";
-import IconMui from "../images/skills/sass.png";
+import IconMui from "../images/skills/mui.png";
 // design & prototyping
 import IconFigma from "../images/skills/figma.png";
 import IconIllustrator from "../images/skills/illustrator.png";
 // databases
-import IconMongo from "../images/skills/figma.png";
-import IconPostgresql from "../images/skills/figma.png";
-import IconMysql from "../images/skills/figma.png";
-import IconSql from "../images/skills/figma.png";
+import IconMongo from "../images/skills/mongodb.png";
+import IconPostgresql from "../images/skills/postgresql.png";
+import IconMysql from "../images/skills/mysql.png";
+import IconSql from "../images/skills/sql.png";
 
 function Home({ portfolioData, educationData, experienceData }) {
   const skillCategories = {

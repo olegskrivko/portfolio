@@ -9,6 +9,11 @@ import NoMatch from "./pages/NoMatch";
 import Layout from "./pages/Layout";
 import PortfolioDetails from "./pages/PortfolioDetails";
 
+import ImgPets from "./images/portfolio/animals.jpg";
+import ImgCooking from "./images/portfolio/cooking.jpg";
+import ImgTodo from "./images/portfolio/todo.png";
+import ImgShoppingcart from "./images/portfolio/shoppingcart.jpg";
+
 // import components
 // import Header from "./components/Header/Header";
 // import Footer from "./components/Footer/Footer";
@@ -38,7 +43,7 @@ const portfolioData = [
     id: 2,
     slug: "to-do-list-app",
     title: "To-Do List App",
-    image: "https://placehold.co/600x400",
+    image: ImgTodo,
     technology: ["React", "CSS"],
     github: "https://github.com/olegskrivko/todo",
     demoURL: "https://react-to-do-local-storage.netlify.app/",
@@ -90,6 +95,50 @@ const portfolioData = [
     isAvailable: true,
     description:
       "Display products — images, descriptions, interactive features.",
+  },
+  {
+    id: 7,
+    slug: "find-your-pet",
+    title: "Find Your Pet",
+    image: ImgPets,
+    technology: ["ExpressJS", "Bootstrap"],
+    github: "https://github.com/olegskrivko/pawprint",
+    demoURL: "https://pawclix.cyclic.app",
+    isAvailable: true,
+    description: "Web app where you can register your lost pet.",
+  },
+  {
+    id: 8,
+    slug: "cooking-recipes",
+    title: "Cooking Recipes",
+    image: ImgCooking,
+    technology: ["ExpressJS", "Bootstrap"],
+    github: "https://github.com/olegskrivko/cookingapp",
+    demoURL: "https://cooking.cyclic.app",
+    isAvailable: false,
+    description: "Simple cooking app with filtering options.",
+  },
+  {
+    id: 9,
+    slug: "shopping-cart",
+    title: "Shopping Cart",
+    image: ImgShoppingcart,
+    technology: ["React", "CSS"],
+    github: "https://github.com/olegskrivko/react-shop",
+    demoURL: "https://react-shop-cart-prj.netlify.app/",
+    isAvailable: true,
+    description: "Simple shopping cart, where you can add products.",
+  },
+  {
+    id: 10,
+    slug: "cookbook",
+    title: "Cookbook",
+    image: "https://placehold.co/600x400",
+    technology: ["React", "CSS"],
+    github: "https://github.com/olegskrivko/react-shop",
+    demoURL: "https://gardas-receptes.netlify.app/recipes",
+    isAvailable: true,
+    description: "Simple shopping cart, where you can add products.",
   },
 ];
 // education data
