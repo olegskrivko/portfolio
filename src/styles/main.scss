@@ -29,10 +29,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*
+to fix bouncing effect in timeline
+html, body {
+  overflow-x:hidden 
+} 
 
+*/
 html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
   // background-color: #06141b;
   // background-color: #11212d;
   // background-color: #253745;
@@ -56,6 +62,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   background-color: #272829 !important;
 }
